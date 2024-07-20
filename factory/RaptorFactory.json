@@ -1,9 +1,0 @@
-{
-	"name": "RaptorFactory",
-	"location": "eastus",
-	"identity": {
-		"type": "SystemAssigned",
-		"principalId": "f3b8093b-f2f0-423f-a532-146fadef59b3",
-		"tenantId": "ea205b5e-2a6e-4fb4-aa13-95e0a9f039d5"
-	}
-}
