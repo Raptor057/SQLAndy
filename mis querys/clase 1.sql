@@ -17,5 +17,15 @@
 
 --select * from Person WHERE old BETWEEN 18 and 30
 
+-- selecciona las que tienen m al inicio 
+--select * from City  WHERE city like 'm%'
+
+--select * from City  WHERE city like '%co%'
+
+-- este  usa para contar las veces que se repite el nombre  de la ciudad mas de una vez
+-- SELECT City,COUNT(City)
+-- FROM City
+-- GROUP BY City
+-- HAVING COUNT(*) > 1;
 
 
