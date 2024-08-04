@@ -6,16 +6,24 @@
 -- WHERE -- Indica condiciones sobre las columnas
 --Order By -- indica un tipo de acomodo decendente o acendente 
 
-SELECT top 5 * FROM Users 
-Order BY last_name ASC -- Este comando sirve para acomodarlos en un orden, ya sea acendente o decendente
+-- SELECT top 5 * FROM Users 
+-- Order BY last_name ASC -- Este comando sirve para acomodarlos en un orden, ya sea acendente o decendente
 
-SELECT top 5 * FROM Users 
-WHERE Phone IS NOT NULL
+-- SELECT top 5 * FROM Users 
+-- WHERE Phone IS NOT NULL
 
-SELECT top 5 * FROM Users 
-WHERE Phone IS NULL
+-- SELECT top 5 * FROM Users 
+-- WHERE Phone IS NULL
 
-SELECT top 5 COUNT(id)  AS [Numero de telefono en NULL]
-FROM Users 
-WHERE Phone IS NULL
+-- SELECT top 5 COUNT(id)  AS [Numero de telefono en NULL]
+-- FROM Users 
+-- WHERE Phone IS NULL
 
+SELECT 
+US.first_name, 
+US.last_name, 
+US.gender,
+sh.School
+FROM Users US
+INNER JOIN School SH
+ON us.id = sh.id
